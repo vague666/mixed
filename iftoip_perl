@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use IO::Interface::Simple;
+use feature qw(say);
+
+my $iface = shift;
+
+my $if = IO::Interface::Simple->new($iface) or die "$!: $iface";
+say $if->address;
+exit 0;
