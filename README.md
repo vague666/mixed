@@ -18,4 +18,4 @@ Device "ens35" does not exist.
 This can be used with any tool that allows you to bind to an interface from the commandline, for example
 `ssh -b $(iftoip ens33) user@host`
 or
-`scp -o BindAddress=$(iftoip ens34) user@host`
+`scp -o BindAddress=$(iftoip ens34) REAME.md user@host:`
